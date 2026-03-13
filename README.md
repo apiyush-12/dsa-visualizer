@@ -6,7 +6,7 @@ An interactive learning platform for Data Structures and Algorithms (DSA) featur
 🚀 Live Demo
 
 🔗 Deployed Application:
-https://your-project.vercel.app
+dsa-visual.piyussh.dev/
 
 ✨ Features
 
