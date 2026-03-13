@@ -6,7 +6,7 @@ An interactive learning platform for Data Structures and Algorithms (DSA) featur
 🚀 Live Demo
 
 🔗 Deployed Application:
-dsa-visual.piyussh.dev/
+https://dsa-visual.piyussh.dev/
 
 ✨ Features
 
