@@ -1,0 +1,19 @@
+.page { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-lg); }
+.pageHeader { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-md); }
+.pageTitle { font-size: var(--font-size-2xl); font-weight: 700; }
+.algoSelect { display: flex; gap: var(--space-xs); flex-wrap: wrap; }
+.algoBtn { padding: var(--space-sm) var(--space-md); border-radius: var(--radius-sm); font-size: var(--font-size-xs); font-weight: 600; color: var(--text-secondary); background: var(--bg-card); border: 1px solid var(--border-secondary); transition: all var(--transition-fast); }
+.algoBtn:hover { border-color: var(--border-primary); color: var(--text-primary); }
+.algoBtn.active { background: var(--accent-primary); color: white; border-color: var(--accent-primary); }
+.toolbar { display: flex; gap: var(--space-sm); align-items: center; flex-wrap: wrap; }
+.runBtn { padding: var(--space-sm) var(--space-lg); background: var(--gradient-primary); color: white; border-radius: var(--radius-sm); font-size: var(--font-size-sm); font-weight: 600; transition: all var(--transition-fast); }
+.runBtn:hover { transform: translateY(-1px); box-shadow: var(--shadow-glow-sm); }
+.toolBtn { padding: var(--space-sm) var(--space-md); background: var(--bg-elevated); border: 1px solid var(--border-secondary); border-radius: var(--radius-sm); font-size: var(--font-size-xs); font-weight: 600; color: var(--text-secondary); transition: all var(--transition-fast); }
+.toolBtn:hover { border-color: var(--border-primary); color: var(--text-primary); }
+.hint { font-size: var(--font-size-xs); color: var(--text-muted); margin-left: auto; }
+.canvas { background: var(--bg-card); border: 1px solid var(--border-secondary); border-radius: var(--radius-md); overflow: hidden; user-select: none; }
+.graphSvg { display: block; cursor: crosshair; }
+.nodeGlow { filter: drop-shadow(0 0 8px rgba(245,158,11,0.5)); }
+.distTable { padding: var(--space-sm) var(--space-md); background: rgba(59,130,246,0.08); border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: var(--font-size-sm); border-left: 3px solid var(--accent-info); display: flex; flex-wrap: wrap; gap: var(--space-md); }
+.distLabel { font-weight: 700; color: var(--accent-info); }
+.distItem { color: var(--text-primary); }

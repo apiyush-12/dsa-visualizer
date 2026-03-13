@@ -1,0 +1,127 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-secondary);
+  flex-wrap: wrap;
+}
+
+.btnGroup {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-size: 16px;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border-color: var(--border-primary);
+}
+
+.btn.primary {
+  background: var(--accent-primary);
+  color: white;
+}
+
+.btn.primary:hover {
+  background: var(--accent-primary-dark);
+  box-shadow: var(--shadow-glow-sm);
+}
+
+.btn.danger {
+  color: var(--accent-danger);
+}
+
+.btn.danger:hover {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.speedControl {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-left: auto;
+}
+
+.speedLabel {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.speedSlider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 120px;
+  height: 4px;
+  border-radius: var(--radius-full);
+  background: var(--bg-tertiary);
+  outline: none;
+}
+
+.speedSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(99, 102, 241, 0.4);
+  transition: transform var(--transition-fast);
+}
+
+.speedSlider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.stepInfo {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+}
+
+.message {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(99, 102, 241, 0.08);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  color: var(--text-accent);
+  border-left: 3px solid var(--accent-primary);
+  margin-top: var(--space-sm);
+  animation: fadeIn 0.2s ease;
+}
+
+@media (max-width: 600px) {
+  .controls {
+    padding: var(--space-sm);
+    gap: var(--space-sm);
+  }
+  .speedSlider {
+    width: 80px;
+  }
+}
